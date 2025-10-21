@@ -1,0 +1,16 @@
+O que é microsserviços ?
+Um micro serviço é uma abordagem de arquitetura de software onde uma aplicação é dividida em pequenos serviços independentes, cada um responsável por uma funcionalidade específica. Esses serviços comunicam-se entre si geralmente por APIs, facilitando escalabilidade, manutenção e implantação separada.
+
+Visão geral da arquitetura Monolítica e de Microsserviços
+Arquitetura Monolítica: Toda a aplicação é construída como um único bloco, onde todos os módulos e funcionalidades estão integrados e executam juntos. É simples de desenvolver e implantar, mas pode dificultar escalabilidade e manutenção conforme cresce.
+Arquitetura de Microsserviços: A aplicação é dividida em pequenos serviços independentes, cada um responsável por uma funcionalidade específica. Cada serviço pode ser desenvolvido, implantado e escalado separadamente, facilitando manutenção, flexibilidade e uso de diferentes tecnologias.
+
+Os benefícios da arquitetura de microsserviços - Cite 3 exemplos
+Escalabilidade independente: Cada serviço pode ser escalado separadamente conforme a demanda, otimizando recursos.
+Facilidade de manutenção: Mudanças em um serviço não afetam os demais, tornando o desenvolvimento e correção de bugs mais ágeis.
+Implantação contínua: Permite deploys frequentes e independentes de cada serviço, acelerando entregas e reduzindo riscos.
+
+Quais são os tipos de comunicação entre os microsserviços ?
+Síncrona: Os serviços se comunicam em tempo real, geralmente via HTTP/REST, gRPC ou GraphQL. O cliente espera pela resposta do serviço chamado.
+Assíncrona: A comunicação ocorre por meio de mensagens enviadas a filas ou tópicos (ex: RabbitMQ, Kafka), sem necessidade de resposta imediata. Ideal para desacoplar serviços e aumentar a resiliência.
+Eventos: Os microsserviços publicam eventos e outros serviços podem reagir a eles, usando sistemas de mensageria ou streaming de eventos. Facilita integração e escalabilidade.
